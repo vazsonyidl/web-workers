@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Heavy calculations example</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div class=centered>
+    <div class=rel>
+        <h3>The landing of Perseverance</h3>
+
+        <div class=circle id=circle></div>
+
+        <div class=left>
+            <div class=button id=btnLocal>Kill your main thread</div>
+            <div class=output id=outputLocal></div>
+            <div class=text>
+                Starts a heavy calculation and it will heat your room soon.
+            </div>
+        </div>
+
+        <div class=separator></div>
+
+        <div class=right>
+            <div class=button id=btnWorker>Calculate in a worker</div>
+            <div class=output id=outputWorker></div>
+            <div class=text>
+                Performs exactly the same calculation, but uses a web-worker, and watch it fail. :)
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
